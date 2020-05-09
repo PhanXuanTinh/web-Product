@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>Máy tính bỏ túi</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>JS Bin</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" ></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="B:\notepad file\may_tinh_bo_tui\style.css"/>
+		<script type="text/javascript" src="B:\notepad file\may_tinh_bo_tui\script.js"></script>
+	</head>
+	<body>
+	<h1 id="title">Máy tính bỏ túi</h1>
+		<table border="2" cellpadding="15px" cellspacing="2px" >
+			<tr >
+				<td colspan="5">
+					<form>
+						<p id="result"></p>
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<td >
+					<button value="1" id="so1" onclick="clickvalue('so1')">
+					1
+					</button>
+				</td>
+				<td>
+					<button value="2" id="so2" onclick="clickvalue('so2')">
+					2
+					</button>
+				</td>
+				<td>
+					<button value="3" id="so3" onclick="clickvalue('so3')">
+					3
+					</button>
+				</td>
+				<td bgcolor="yellow" onclick="dec()">DEC</td>
+				<td bgcolor="yellow" onclick="ac()">AC</td>
+			</tr>
+			<tr>
+				<td>
+					<button value="4" id="so4" onclick="clickvalue('so4')">
+					4
+					</button>
+				</td>
+				<td>
+					<button value="5" id="so5" onclick="clickvalue('so5')">
+					5
+					</button>
+				</td>
+				<td>
+					<button value="6" id="so6" onclick="clickvalue('so6')">
+					6
+					</button>
+				</td>
+				<td bgcolor="blue">+</td>
+				<td bgcolor="blue">-</td>
+			</tr>
+			<tr>
+				<td>
+					<button value="7" id="so7" onclick="clickvalue('so7')">
+					7
+					</button>
+				</td>
+				<td>
+					<button value="8" id="so8" onclick="clickvalue('so8')">
+					8
+					</button>
+				</td>
+				<td>
+					<button value="9" id="so9" onclick="clickvalue('so9')">
+					9
+					</button>
+				</td>
+				<td bgcolor="blue">*</td>
+				<td bgcolor="blue">/</td>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>.</td>
+				<td>Ans</td>
+				<td bgcolor="red" colspan="2" >
+					<button id="bang" onclick="calculator()">=</button>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
