@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>demo</title>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#btn1").click(function(){
+					alert("Hàm text: "+$("#test1").text());
+				});
+				$("#btn2").click(function(){
+					alert("Hàm text: "+$("#test1").html());
+				});
+				$("#btn3").click(function(){
+					alert("Hàm text: "+$("#test2").val());
+				});
+				$("#btn4").click(function(){
+					alert("Hàm text: "+$("#test3").attr("href"));
+				});
+			});
+		</script>
+	</head>
+	<body>
+	<p id="test1">Hello <b>everyone</b></p>
+		<p>Họ và tên:<input type="button" value="phan xuân tính" id="test2"/></p><br/>
+		<p>
+			<a href="http://facebook.com.vn" id="test3">facebook.com</a>
+		</p>
+		<button id="btn1">hàm lấy text</button>
+		<button id="btn2">hàm lấy HTML</button>
+		<button id="btn3">hàm lấy giá trị</button>
+		<button id="btn4">hàm lấy thuộc tính href</button>
+	
+	</body>
+</html>
