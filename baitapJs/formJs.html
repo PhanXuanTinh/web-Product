@@ -1,0 +1,112 @@
+<html>
+	<head>
+		<title>form đăng kí, đăng nhập</title>
+		<link type="text/css" rel="stylesheet" href="style.css"/>
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			
+			<a id="dangki" class="tab" onclick="onDangki()">ĐĂNG KÍ</a>
+			<a id="dangnhap" class="tab" onclick="onDangnhap()">ĐĂNG NHẬP</a>
+			
+			<div id="divdangki" class="divform" >
+			<form id="form-dang-ki" action="trangchu.php">
+				<h2>Đăng kí thành viên</h2>
+				<p id="thong-bao"></p>
+				<hr/>
+				<table>
+					<tr>
+						<th>Tên đăng nhập:</th>
+						<th><input type="text" id="name" class="input-css"></input><br/></th>
+					</tr>
+					<tr>
+						<th>Mật khẩu:</th>
+						<th><input type="password" id="password" class="input-css"></input><br/></th>
+					</tr>
+					<tr>
+						<th>Email:</th>
+						<th><input type="text" id="email" class="input-css"></input><br/></th>
+					</tr>
+					<tr>
+						<th>Nghề nghiệp:</th>
+						<th>
+							<select class="drnghenghiep" id="profession">
+								<option>vui lòng chọn</option>
+								<option>Học sinh</option>
+								<option>kĩ sư</option>
+								<option>họa sĩ</option>
+								<option>kế toán</option>
+								<option>ca sĩ</option>
+								<option>Giáo viên</option>
+							</select>
+						<br/></th>
+					</tr>
+					<tr>
+						<th>tuổi:</th>
+						<th><input type="text" id="old" class="input-css"></input><br/></th>
+					</tr>
+					<tr>
+						<th>Giới tính:</th>
+						<th> <input type="radio" id="nam" name="gioitinh">nam</input>
+							<input type="radio" id="nu" name="gioitinh">nữ</input>
+						</th>
+						
+					</tr>
+					<tr>
+						<th colspan="2" style="text-align:center">
+							<input type="submit" value="Đăng kí" id="btn-dangki" onclick="return ktrHopLe()"></input>
+						</th>
+					</tr>
+					<tr>
+						<th colspan="2" style="text-align:center">
+							Bạn đã có tài khoản? vui lòng click <a href="#"id="den-dangnhap" onclick="onDangnhap()">Đăng nhập</a>
+						</th>
+					</tr>
+				</table>
+			</form>
+			
+			</div>
+			
+		    <div id="divdangnhap"class="divform" >
+			<form id="form1" action="trangchu.php">
+				<h2>Đăng nhập</h2>
+				<hr/>
+				<table>
+					<tr>
+						<td>Tên đăng nhập:</td>
+						<td><input type="text" id="ten-dang-nhap" class="input-css"/></td>						
+					</tr>
+					<tr>
+						<td>Mật khẩu:</td>
+						<td><input type="password" id="password" class="input-css"/></td>						
+					</tr>
+					<tr>
+						<th colspan="2" style="text-align:center">
+							<input type="submit" value="Đăng nhập" id="btn-dangnhap"></input>
+						</th>
+					</tr>
+					<tr>
+						<th colspan="2" style="text-align:center">
+							<input type="checkbox"  id="ghi-nho-mk">Ghi nhớ lần sau</input>
+						</th>
+					</tr>
+					<tr>
+						<th colspan="2" style="text-align:center">
+							<a href="#" id="quen mk">Quên mật khẩu</a>
+						</th>
+					</tr>
+					<tr>
+						<th colspan="2" style="text-align:center">
+							Bạn đã có tài khoản? vui lòng click <a href="#"id="den-dangki" onclick="onDangki()">Đăng kí</a>
+						</th>
+					</tr>
+				</table>
+			</form>
+			</div>
+		</div>
+		
+		
+
+	</body>
+</html>

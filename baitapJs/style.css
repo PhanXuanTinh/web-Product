@@ -1,0 +1,64 @@
+body{
+	margin: 0px;
+}
+#container{
+	background: rgba(81,226,189,0.93);
+	margin: 0 auto;
+	width: 500px;
+	height: auto;
+}
+.tab{
+	background-color: #ffab00;
+    padding: 15 34px;
+    font-size: 20;
+    font-style: unset;
+	display: inline-block;
+
+}
+a.tab:hover{
+	background-color:#4ef54e !important;
+}
+#dangnhap{
+	background-color: #efefe0;
+}
+hr{
+	border-color: black;
+	width:80%;
+}
+#divdangki{
+	margin: 0 auto;
+	width: auto;
+	height: 400px;
+}
+#divdangnhap{
+	margin: 0 auto;
+	width: auto;
+	height: 400px;
+	display: none;
+}
+h2{
+	text-align: center;
+}
+table{
+	    margin-left: 35px;
+}
+.input-css{
+	padding: 6px;
+    margin: 5px 15px;
+}
+.drnghenghiep{
+	width: 182px;
+}
+#btn-dangki,#btn-dangnhap{
+	padding: 7 25px;
+    background-color: #eaea1c;
+    margin-left: 30;
+}
+#btn-dangki,#btn-dangnhap:hover{
+	background-color:#4ef54e;
+}
+#thong-bao{
+	display:none;
+	color:red;
+	text-align:center;
+}
