@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>Máy tính bỏ túi</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>JS Bin</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" ></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="B:\notepad file\may_tinh_bo_tui\style.css"/>
+		<script type="text/javascript" src="B:\notepad file\may_tinh_bo_tui\script.js"></script>
+	</head>
+	<body >
+	<h1>
+	<center>Máy tính bỏ túi</center>
+	</h1>
+	
+		<table border="2" cellpadding="10px" cellspacing="1px" >
+			<tr >
+				<td colspan="5">
+					<form>
+						<input type="text" id="result"/><span>casio</span>
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<td >
+					<button value="1" onclick="result.value+=this.value">
+					1
+					</button>
+				</td>
+				<td>
+					<button value="2" onclick="result.value+=this.value">
+					2
+					</button>
+				</td>
+				<td>
+					<button value="3" onclick="result.value+=this.value">
+					3
+					</button>
+				</td>
+				<td bgcolor="yellow" >
+					<button value="Dec" onclick="result.value=result.value.substr(0,result.value.length-1)">DEC</button>
+				</td>
+				<td bgcolor="yellow" >
+					<button value="Ac" onclick="result.value=''">AC</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button value="4"  onclick="result.value+=this.value">
+					4
+					</button>
+				</td>
+				<td>
+					<button value="5"  onclick="result.value+=this.value">
+					5
+					</button>
+				</td>
+				<td>
+					<button value="6"  onclick="result.value+=this.value">
+					6
+					</button>
+				</td>
+				<td bgcolor="blue">
+				<button value="+" onclick="result.value+=this.value">+</button></td>
+				<td bgcolor="blue">
+					<button value="-" onclick="result.value+=this.value">-</button>
+				</td>
+				
+			</tr>
+			<tr>
+				<td>
+					<button value="7"  onclick="result.value+=this.value">
+					7
+					</button>
+				</td>
+				<td>
+					<button value="8"  onclick="result.value+=this.value">
+					8
+					</button>
+				</td>
+				<td>
+					<button value="9"  onclick="result.value+=this.value">
+					9
+					</button>
+				</td>
+				<td bgcolor="blue">
+					<button id="mul" value="*" onclick="result.value+=this.value">*</button>
+				</td>
+				<td bgcolor="blue">
+					<button id="div" value="/" onclick="result.value+=this.value">/</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button value="0"  onclick="result.value+=this.value">0</button>
+				</td>
+				<td>
+					<button value="."  onclick="result.value+=this.value">.</button>
+				</td>
+				<td bgcolor="yellow">
+					<button  id="Ans" value="" onclick="result.value=this.value">Ans</button>
+				</td>
+				<td bgcolor="red" colspan="2" >
+					<button value="=" style="padding: 0px 49px;"onclick="calcalator()">=</button>
+					
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
